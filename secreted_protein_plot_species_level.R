@@ -22,8 +22,6 @@ df %>%
     filter(Assembly != "GCA_024752465.1")%>% select(Strain, Lifestyle, Gene_number, Secreted_protein_number:Sucrose) -> df0
 
 
-
-
 ggplot(df0, aes(x = Secreted_protein_number / Gene_number * 100, y = factor(Strain, levels = strain_levels))) +
   geom_bar(aes(fill = Lifestyle), stat = "identity", alpha=0.5) +
   theme_minimal() +
@@ -46,7 +44,6 @@ group_level <- c(
   "CBM", "PCWDE", "FCWDE", "Cellulose", "Hemicellulose", "Lignin",
   "Pectin", "Peptidoglycan", "Mannan", "Glucan", "Chitin", "Sucrose"
 )
-
 
 
 df0 %>%
