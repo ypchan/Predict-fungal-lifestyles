@@ -42,6 +42,3 @@ df %>% ggplot(.) +
 ggarrange(bubble_p,bar_p, widths = c(7,1))
     
     
-
-
-
