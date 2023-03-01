@@ -640,17 +640,6 @@ cluster_order_lst <- c("tRNA_length_mean", "Exon_length_max", "Intron_number",
                        "Intergenic_length_min", "Intergenic_length_mean")
 
 
-
-
-
-
-
-
-                 
-
 ggarrange(pair_difference_subclass_p, pair_difference_order_p, 
           pair_difference_family_p, pair_difference_lifestyle_p, 
           nrow = 1, common.legend = TRUE, widths = c(1,1,1,1)) 
-
-
-
